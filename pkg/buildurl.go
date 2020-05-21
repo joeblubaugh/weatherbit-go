@@ -11,6 +11,9 @@ import (
 
 func buildRequestURL(p Parameters) string {
 
+	if len(p.Apikey) == 0 {
+		p.Apikey = os.Getenv("WBITKEY")
+	}
 	sb := strings.Builder{}
 	sb.WriteString(BaseURL)
 
@@ -22,7 +25,7 @@ func buildRequestURL(p Parameters) string {
 
 	sb.WriteString(addlocation(p))
 	sb.WriteString(addtimeframe(p))
-	sb.WriteString("&key=" + os.Getenv("WBITKEY"))
+	sb.WriteString("&key=" + p.Apikey)
 
 	return sb.String()
 }
