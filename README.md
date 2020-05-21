@@ -37,12 +37,12 @@ In accordance with [Mat Ryer - Writing Beautiful Packages in Go](https://youtu.b
 
 ## Documentation
 
-Available at [GoDoc](https://godoc.org/github.com/alljames/weatherbit-go/weatherbit)
+Available at [GoDoc](https://godoc.org/github.com/joeblubaugh/weatherbit-go/weatherbit)
 
 ## Installation
 
 ```bash
-go get -u -v github.com/alljames/weatherbit-go/
+go get -u -v github.com/joeblubaugh/weatherbit-go/
 ```
 
 To uninstall, delete the directory in your $GOPATH/src.

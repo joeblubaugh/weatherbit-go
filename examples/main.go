@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	wb "github.com/alljames/weatherbit-go/pkg"
+	wb "github.com/joeblubaugh/weatherbit-go/pkg"
 	"os"
 	"net/url"
 )
