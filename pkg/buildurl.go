@@ -27,6 +27,7 @@ func buildRequestURL(p Parameters) string {
 	sb.WriteString(addtimeframe(p))
 	sb.WriteString("&key=" + p.Apikey)
 
+	log.Println(sb.String())
 	return sb.String()
 }
 
